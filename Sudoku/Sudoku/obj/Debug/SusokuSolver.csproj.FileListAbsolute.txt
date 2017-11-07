@@ -1,0 +1,5 @@
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\GFG\bin\Debug\GFG.exe.config
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\GFG\bin\Debug\GFG.exe
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\GFG\bin\Debug\GFG.pdb
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\GFG\obj\Debug\GFG.exe
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\GFG\obj\Debug\GFG.pdb

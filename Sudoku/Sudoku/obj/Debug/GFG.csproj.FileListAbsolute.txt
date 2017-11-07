@@ -1,0 +1,6 @@
+c:\users\e883435\documents\visual studio 2015\Projects\GFG\GFG\bin\Debug\GFG.exe.config
+c:\users\e883435\documents\visual studio 2015\Projects\GFG\GFG\bin\Debug\GFG.exe
+c:\users\e883435\documents\visual studio 2015\Projects\GFG\GFG\bin\Debug\GFG.pdb
+c:\users\e883435\documents\visual studio 2015\Projects\GFG\GFG\obj\Debug\GFG.csprojResolveAssemblyReference.cache
+c:\users\e883435\documents\visual studio 2015\Projects\GFG\GFG\obj\Debug\GFG.exe
+c:\users\e883435\documents\visual studio 2015\Projects\GFG\GFG\obj\Debug\GFG.pdb

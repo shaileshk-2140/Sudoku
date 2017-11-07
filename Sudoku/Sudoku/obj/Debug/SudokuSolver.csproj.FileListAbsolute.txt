@@ -1,0 +1,9 @@
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\GFG\bin\Debug\SudokuSolver.exe.config
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\GFG\bin\Debug\SudokuSolver.exe
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\GFG\bin\Debug\SudokuSolver.pdb
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\GFG\obj\Debug\SudokuSolver.exe
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\GFG\obj\Debug\SudokuSolver.pdb
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\GFG\obj\Debug\SudokuSolver.csprojResolveAssemblyReference.cache
+C:\Sudoku\Sudoku\Sudoku\bin\Debug\SudokuSolver.exe.config
+C:\Sudoku\Sudoku\Sudoku\obj\Debug\SudokuSolver.exe
+C:\Sudoku\Sudoku\Sudoku\obj\Debug\SudokuSolver.pdb

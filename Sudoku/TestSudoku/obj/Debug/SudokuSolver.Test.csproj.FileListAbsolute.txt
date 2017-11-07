@@ -1,0 +1,18 @@
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\TestSudoku\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\TestSudoku\bin\Debug\SudokuSolver.exe
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\TestSudoku\bin\Debug\SudokuSolver.pdb
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\TestSudoku\obj\Debug\SudokuSolver.Test.csprojResolveAssemblyReference.cache
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\TestSudoku\bin\Debug\SudokuSolver.Test.dll
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\TestSudoku\bin\Debug\SudokuSolver.Test.pdb
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\TestSudoku\obj\Debug\SudokuSolver.Test.dll
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\TestSudoku\obj\Debug\SudokuSolver.Test.pdb
+C:\Users\e883435\Documents\Visual Studio 2015\Projects\GFG\TestSudoku\bin\Debug\DataFile\mycsv.csv
+C:\Sudoku\Sudoku\TestSudoku\bin\Debug\DataFile\mycsv.csv
+C:\Sudoku\Sudoku\TestSudoku\bin\Debug\SudokuSolver.Test.dll
+C:\Sudoku\Sudoku\TestSudoku\bin\Debug\SudokuSolver.Test.pdb
+C:\Sudoku\Sudoku\TestSudoku\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Sudoku\Sudoku\TestSudoku\bin\Debug\SudokuSolver.exe
+C:\Sudoku\Sudoku\TestSudoku\bin\Debug\SudokuSolver.pdb
+C:\Sudoku\Sudoku\TestSudoku\obj\Debug\SudokuSolver.Test.csprojResolveAssemblyReference.cache
+C:\Sudoku\Sudoku\TestSudoku\obj\Debug\SudokuSolver.Test.dll
+C:\Sudoku\Sudoku\TestSudoku\obj\Debug\SudokuSolver.Test.pdb
