@@ -24,14 +24,11 @@ namespace SudokuSolver
             };
 
             Sudoku s = new Sudoku();
-            if (s.SolveSudoku(input) == true) //If sudoku has a solution
-            {
-                var nonNullable2DArray = input.To2DArray(9, 9); //Convert nullable 2Daaray to Non Nullable 2D array
 
-                s.printGrid(nonNullable2DArray);
-            }
-            else //If no solution exist
-                Console.WriteLine("No solution exists");
+            var x = s.SolveSudoku(input);
+
+            s.printGrid(s.SolveSudoku(input));
+            
             Console.ReadLine();
         }
     }

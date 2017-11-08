@@ -56,15 +56,15 @@
     <Compile Include="TestInput.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="DataFile\mycsv.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Sudoku\SudokuSolver.csproj">
       <Project>{cb23c4ad-0e09-468c-94c4-30c13d1c736e}</Project>
       <Name>SudokuSolver</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="DataFile\mycsv.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

@@ -17,26 +17,52 @@ namespace SudokuSolver
         /// </summary>
         /// <param name="grid"></param>
         /// <returns></returns>
-        public bool SolveSudoku(int?[,] grid)
-        {
-            if (grid == null) return false;
-            int row = 0, col = 0;
-            if (!FindUnassignedLocation(grid, ref row, ref col)) return true; 
+        //public bool SolveSudoku(int?[,] grid)
+        //{
+        //    if (grid == null) return false;
+        //    int row = 0, col = 0;
+        //    if (!FindUnassignedLocation(grid, ref row, ref col)) return true; 
 
-            for (int num = 1; num <= 9 ; num++)
+        //    for (int num = 1; num <= 9 ; num++)
+        //    {
+        //        if (isSafe(grid, row, col, num))
+        //        {
+        //            grid[row, col] = num;
+
+        //            if (SolveSudoku(grid))
+        //                return true;
+
+        //            grid[row,col] = null;
+        //        }
+        //    }
+
+        //    return false;
+        //}
+        public int[,] SolveSudoku(int?[,] grid)
+        {
+            if (grid == null) return null;
+            int row = 0, col = 0;
+            if (!FindUnassignedLocation(grid, ref row, ref col)) return grid.To2DArray(9,9);
+
+            for (int num = 1; num <= 9; num++)
             {
                 if (isSafe(grid, row, col, num))
                 {
                     grid[row, col] = num;
 
-                    if (SolveSudoku(grid))
-                        return true;
+                    var nonNullableGrid = SolveSudoku(grid);
 
-                    grid[row,col] = null;
+                    int startRowIndex=0, startColIndex=0;
+
+                    if (!FindUnassignedLocation(grid, ref startRowIndex, ref startColIndex))
+                    {
+                        return nonNullableGrid;
+                    }
+
+                    grid[row, col] = null;
                 }
             }
-
-            return false;
+            return grid.To2DArray(9,9);
         }
         /// <summary>
         /// This method would check for any empty block and returns the indices by ref

@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SudokuSolver;
 using System.Collections.Generic;
-using System.Data;
+using SudokuSolver;
+
 
 namespace SudokuSolver.Test
 {
@@ -52,8 +52,12 @@ namespace SudokuSolver.Test
                 }
             }
             var sudoku = new Sudoku();
+
             var result = sudoku.SolveSudoku(grid);
-            Assert.AreEqual(result, Convert.ToBoolean(expectedResult));
+
+            var isValidSudoku = Validate_Sudoku(result);
+
+            Assert.AreEqual(isValidSudoku, Convert.ToBoolean(expectedResult));
         }
         /// <summary>
         /// This test method will check the null grid
@@ -64,7 +68,10 @@ namespace SudokuSolver.Test
             var sudoku = new Sudoku();
             
             var result = sudoku.SolveSudoku(null);
-                Assert.AreEqual(result, false);
+
+            var isValidSudoku = Validate_Sudoku(null);
+
+            Assert.AreEqual(isValidSudoku, false);
 
         }
         /// <summary>
@@ -77,8 +84,49 @@ namespace SudokuSolver.Test
             foreach (var sudokuData in _sudokuDetails)
             {
                 var result = sudoku.SolveSudoku(sudokuData.SudokuInitialGrid);
-                Assert.AreEqual(result, sudokuData.ExpectedResult);
+
+                var isValidSudoku = Validate_Sudoku(result);
+
+                Assert.AreEqual(isValidSudoku, sudokuData.ExpectedResult);
             }
         }
+
+        private bool Validate_Sudoku(int[,] grid)
+        {
+            if (grid == null) return false;
+            //First check numbers are between 1-9
+            for(int i = 0; i<9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    if(grid[i,j] <= 0 || grid[i, j] > 9 || !IsValid(i,j,grid))
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+        private bool IsValid(int rowIndex, int colIndex , int[,] grid)
+        {
+            for (int col = 0; col < 9; col++)
+            {
+                if (col != colIndex && grid[rowIndex, col] == grid[rowIndex, colIndex]) return false;
+            }
+            for (int row = 0; row < 9; row++)
+            {
+                if (row != rowIndex && grid[row, colIndex] == grid[rowIndex, colIndex]) return false;
+            }
+            for (int row = (rowIndex/3)*3; row < (rowIndex/3)*3 + 3; row++)
+            {
+                for (int col = (colIndex/3)*3; col <(colIndex/3)*3 + 3; col++)
+                {
+                    if (row != rowIndex && col != colIndex && grid[row, col] == grid[rowIndex, colIndex]) return false;
+                }
+            }
+            return true;
+        }
+         
     }
 }
